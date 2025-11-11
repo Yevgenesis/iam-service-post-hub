@@ -103,22 +103,24 @@
 		</plugins>
 	</build>
 
-<!--    <profiles>-->
-<!--        <profile>-->
-<!--            <id>local-idea</id>-->
-<!--            <properties>-->
-<!--                <envName>local-idea</envName>-->
-<!--                <skipTests>true</skipTests>-->
-<!--                <maven-properties.file>src/main/resources/application-local-idea.properties</maven-properties.file>-->
-<!--            </properties>-->
-<!--        </profile>-->
-<!--        <profile>-->
-<!--            <id>prod</id>-->
-<!--            <properties>-->
-<!--            <envName>prod</envName>-->
-<!--            <skipTests>true</skipTests>-->
-<!--            <maven-properties.file>src/main/resources/application-prod.properties</maven-properties.file>-->
-<!--            </properties>-->
-<!--        </profile>-->
-<!--    </profiles>-->
+    <profiles>
+        <profile>
+            <id>local-idea</id>
+            <properties>
+                <envName>local-idea</envName>
+                <skipTests>true</skipTests>
+                <maven-properties.file>src/main/resources/application-local-idea.properties</maven-properties.file>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>prod</id>
+            <properties>
+            <envName>prod</envName>
+            <skipTests>true</skipTests>
+            <maven-properties.file>src/main/resources/application-prod.properties</maven-properties.file>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>
