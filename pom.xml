@@ -109,7 +109,7 @@
             <properties>
                 <envName>local-idea</envName>
                 <skipTests>true</skipTests>
-                <maven-properties.file>src/main/resources/aplication-local-idea.properties</maven-properties.file>
+                <maven-properties.file>src/main/resources/application-local-idea.properties</maven-properties.file>
             </properties>
         </profile>
         <profile>
@@ -117,7 +117,7 @@
             <properties>
             <envName>prod</envName>
             <skipTests>true</skipTests>
-            <maven-properties.file>src/main/resources/aplication-prod.properties</maven-properties.file>
+            <maven-properties.file>src/main/resources/application-prod.properties</maven-properties.file>
             </properties>
         </profile>
     </profiles>
