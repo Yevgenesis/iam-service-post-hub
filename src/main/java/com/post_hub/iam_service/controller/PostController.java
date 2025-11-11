@@ -1,6 +1,6 @@
 package com.post_hub.iam_service.controller;
 
-import com.post_hub.iam_service.service.PostServiceImpl;
+import com.post_hub.iam_service.service.PostService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,10 +14,10 @@ import java.util.Map;
 @RequestMapping("/posts")
 public class PostController {
 
-    private final PostServiceImpl postServiceImpl;
+    private final PostService postService;
 
-    public PostController(PostServiceImpl postServiceImpl) {
-        this.postServiceImpl = postServiceImpl;
+    public PostController(PostService postService) {
+        this.postService = postService;
     }
 
     @PostMapping("/create")
@@ -27,7 +27,7 @@ public class PostController {
 
         String postContent = "title" + title + "content" + content + "\n";
 
-        postServiceImpl.createPost(postContent);
+        postService.createPost(postContent);
 
         return new ResponseEntity<>("Post created with title: " + title, HttpStatus.OK);
 
