@@ -8,8 +8,8 @@ CREATE TABLE posts (
 );
 
 INSERT INTO posts (title, content, created,  likes) VALUES
-                                                        ('First post','This is content of the first post', CURRENT_TIMESTAMP, 10 ),
-                                                        ('Second post','This is content of the second post', CURRENT_TIMESTAMP, 6 );
+                                                        ('First post','This is content of the first post', CURRENT_TIMESTAMP, 6 ),
+                                                        ('Second post','This is content of the second post', CURRENT_TIMESTAMP, 3 );
 
 
 CREATE SCHEMA IF NOT EXISTS v1_iam_service;
